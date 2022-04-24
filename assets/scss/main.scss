@@ -1,0 +1,475 @@
+
+
+
+
+// Ayako Website
+
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(51, 51, 51, .8);
+    z-index: 1000;
+}
+
+nav .logo {
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+nav .nav-list {
+    list-style: none;
+    display: flex;
+
+}
+
+nav .nav-list li {
+    list-style: none;
+    display: flex;
+    margin: 8px;
+
+}
+
+nav .nav-list li a {
+    color: #fff;
+    font-size: 23px;
+    padding: 5px;
+
+}
+
+nav .nav-list li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    align-items: center;
+    background-color: #fff;
+    transition: .4s;
+
+}
+
+nav .nav-list li a:hover {
+    color: #202251;
+}
+
+nav .nav-list li a:hover::after {
+    width: 100%;
+}
+
+.humbger {
+    display: none;
+}
+
+.portfolio-boxing {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.portfolio-boxtwo {
+    position: absolute;
+    display: block;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: #121212;
+
+}
+
+.portfolio-boxing .porfolio-descp {
+    position: absolute;
+    display: block;
+    top: 23%;
+    width: 100%;
+    height: 70%;
+
+}
+
+.portfolio-boxing .porfolio-descp .content {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
+
+.portfolio-boxing .porfolio-descp .portfolio-img {
+    position: absolute;
+    display: flex;
+    left: 12%;
+}
+
+.portfolio-boxing .porfolio-descp .portfolio-img img {
+    width: 230px;
+    height: 230px;
+    border-radius: 18rem;
+}
+
+.portfolio-boxing .porfolio-descp .portfolio-description {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 32%;
+    color: #fff;
+
+}
+
+.liner-box {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    height: 2px;
+    background-color: #fff;
+    left: 28%;
+
+}
+
+.container-projet {
+    position: absolute;
+    display: block;
+    top: 80%;
+    left: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 180vh;
+    background-color: #121212;
+}
+
+.container-projet .title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 36px;
+}
+
+.container-projet .box {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+
+}
+
+.container-projet .box .row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.container-projet .box .row .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 280px;
+    margin: 18px;
+    border-radius: 8px;
+    background-color: #202251;
+
+}
+
+.container-projet .box .row .github {
+    background-color: aliceblue;
+
+}
+.container-projet .box .row .card .title_box {
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+
+}
+
+.container-projet .box .row .card .imgs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.container-projet .box .row .card .imgs img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.container-projet .box .row .card .btn_box {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 40px;
+
+}
+
+
+.container-projet .box .row .card .btn_box .btn {
+    display: block;
+    padding: 5px;
+    border-radius: 5rem;
+    width: 8rem;
+
+    text-align: center;
+    background-color: #1249d3;
+    color: #fff;
+    transition: .5s;
+
+}
+
+.container-projet .box .row .card .btn_box .btn:hover {
+    transform: scale(1.1);
+
+}
+
+.btn-scroll {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    background-color: #1249d3;
+
+    bottom: 0px;
+    right: 50px;
+    opacity: 0;
+    pointer-events: auto;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+
+}
+
+.btn-scroll i {
+    font-size: 26px;
+    color: #fff;
+
+}
+
+.btn-scroll.active {
+    bottom: 50px;
+    opacity: 1;
+    pointer-events: none;
+}
+
+
+
+
+@media screen and (max-width: 580px) {
+
+    .content {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .portfolio-boxing .porfolio-descp .portfolio-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .portfolio-boxing .porfolio-descp .portfolio-description {
+        position: absolute;
+        left: 60%;
+    }
+}
+
+
+.humbgerMenu {
+    position: absolute;
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: -100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: .8s;
+
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .liner-box {
+        display: none;
+        
+    }
+
+    nav .nav-list {
+        display: none;
+
+    }
+
+    .container-projet {
+        height: 300vh;
+
+    }
+
+    .humbger {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 35px;
+        overflow: hidden;
+        right: 20px;
+
+        appearance: none;
+        outline: none;
+        border: none;
+        z-index: 2000;
+        cursor: pointer;
+
+    }
+
+    .humbger .bar,
+    .humbger::before,
+    .humbger::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin: 6px 0;
+        border-radius: 8rem;
+        align-items: center;
+        background-color: #ffff;
+        transition: .6s;
+
+    }
+
+    .humbger.active::before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .humbger.active::after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .humbger.active .bar {
+        opacity: 0;
+    }
+
+    .humbgerMenu.active {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        left: 0;
+        z-index: 100;
+        opacity: 1;
+        background-color: #1249d3;
+        transition: .8s;
+    }
+
+    .humbgerMenu.active ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .humbgerMenu.active ul li {
+        list-style: none;
+        display: flex;
+        font-size: 44px;
+        margin-bottom: 27px;
+    }
+
+    .humbgerMenu.active ul li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+
+    }
+
+    .liner-box {
+        width: 400px;
+        left: 50%;
+    }
+
+    .portfolio-boxing .porfolio-descp .portfolio-description {
+        left: 64%;
+    }
+    .container-projet {
+        height: 220vh;
+    }
+}
+
+
+
+
+
+// Pages Loading
+#pagesweb {
+    display: none;
+}
+
+.back {
+    position: absolute;
+    display: block;
+    background-size: cover;
+    background-color: #121212;
+    height: 200vh;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.contenair_ldg {
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.loading {
+    border: solid 2px #fff;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+    border-right: solid 2px transparent;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: loading1 1s infinite linear;
+    transition: .8s ease;
+}
+
+@keyframes loading1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
