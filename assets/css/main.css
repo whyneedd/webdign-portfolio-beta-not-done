@@ -1,380 +1,454 @@
-.header {
+.main {
   width: 100%;
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
+
   position: relative;
-}
 
-nav {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 150px;
-  width: 100%;
-  height: 4rem;
-  background-color: rgba(51, 51, 51, 0.8);
-  z-index: 1000;
-}
-
-nav .logo {
-  position: relative;
-  font-size: 2em;
-  letter-spacing: 2px;
-  color: #fff;
-}
-
-nav .nav-list {
-  list-style: none;
-  display: flex;
-}
-
-nav .nav-list li {
-  list-style: none;
-  display: flex;
-  margin: 8px;
-}
-
-nav .nav-list li a {
-  color: #fff;
-  font-size: 23px;
-  padding: 5px;
-}
-
-nav .nav-list li a::after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  align-items: center;
-  background-color: #fff;
-  transition: 0.4s;
-}
-
-nav .nav-list li a:hover {
-  color: #202251;
-}
-
-nav .nav-list li a:hover::after {
-  width: 100%;
 }
 
 .humbger {
   display: none;
+
 }
 
-.portfolio-boxing {
+.humngermenu {
+  display: none;
+
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
   width: 100%;
-  min-height: 100vh;
+  height: 4rem;
+  padding: 0 150px;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s;
+}
+
+.navbar .logo {
   position: relative;
-}
-
-.portfolio-boxtwo {
-  position: absolute;
-  display: block;
-  top: 35%;
-  left: 0;
-  width: 100%;
-  height: 80vh;
-  background-color: #121212;
-}
-
-.portfolio-boxing .porfolio-descp {
-  position: absolute;
-  display: block;
-  top: 23%;
-  width: 100%;
-  height: 70%;
-}
-
-.portfolio-boxing .porfolio-descp .content {
-  width: 100%;
-  height: 400px;
-  padding: 20px;
-}
-
-.portfolio-boxing .porfolio-descp .portfolio-img {
-  position: absolute;
   display: flex;
-  left: 12%;
-}
-
-.portfolio-boxing .porfolio-descp .portfolio-img img {
-  width: 230px;
-  height: 230px;
-  border-radius: 18rem;
-}
-
-.portfolio-boxing .porfolio-descp .portfolio-description {
-  position: absolute;
-  display: block;
-  top: 20%;
-  left: 32%;
+  font-size: 30px;
   color: #fff;
+  border-radius: 5px;
+  padding: 2px 23px;
+  /* border: 2px solid #fff; */
+  font-weight: 800;
+
 }
 
-.liner-box {
-  position: absolute;
+.navbar .navbar-list {
+  list-style: none;
   display: flex;
-  width: 800px;
+
+}
+
+.navbar .navbar-list li {
+  display: flex;
+  list-style: none;
+  margin: 12px;
+
+}
+
+.navbar .navbar-list li a {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  transition: .4s;
+
+}
+
+.navbar .navbar-list li a:hover {
+  letter-spacing: 2px;
+  color: rgb(6, 255, 125);
+}
+
+.navbar .navbar-list li a::after {
+  content: "";
+  display: block;
+  width: 0%;
   height: 2px;
-  background-color: #fff;
-  left: 28%;
+  margin: auto;
+  background-color: rgb(6, 255, 125);
+  transition: .4s;
+
 }
 
-.container-projet {
+.navbar .navbar-list li a:hover::after {
+  width: 100%;
+
+}
+
+
+.content {
   position: absolute;
   display: block;
-  top: 80%;
-  left: 0;
-  padding-top: 100px;
-  width: 100%;
-  height: 180vh;
-  background-color: #121212;
-}
-
-.container-projet .title {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  font-size: 36px;
-}
-
-.container-projet .box {
-  width: 100%;
-  height: 500px;
-  padding: 20px;
+  top: 36%;
   left: 50%;
   transform: translateX(-50%);
-  position: absolute;
+  font-size: 39px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+
 }
 
-.container-projet .box .row {
+.container-content {
   position: relative;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-flow: column;
   width: 100%;
   height: 100%;
+
 }
 
-.container-projet .box .row .card {
+.container-content .btn {
+  position: absolute;
+  display: flex;
+  padding: 8px 75px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  bottom: -54px;
+  border-radius: 4rem;
+}
+
+.container-content .btn::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 0%;
+  margin: auto;
+  height: 100%;
+  z-index: -1;
+  transition: .8s;
+  background-color: rgb(6, 255, 125);
+
+}
+
+.container-content .btn:hover::before {
+  width: 100%;
+}
+
+.github-container-stats {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-flow: column;
+  height: 170vh auto;
+  color: rgb(255, 255, 255);
+  padding: 50px;
+  transition: .4s;
+}
+
+.github-container-stats h2 {
+  margin-bottom: 37px;
+}
+
+.github-container-stats p {
+  margin-bottom: 37px;
+}
+
+.github-container-stats img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s;
+  margin-bottom: 48px;
+
+}
+
+.github-container-stats .statsImg {
+  width: 60%;
+}
+
+.github-container-stats .porjetWeb1 {
+  width: 60%;
+}
+
+.github-container-stats .organisationImg {
+  width: 60%;
+
+}
+
+.github-container-stats img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 12px 12px #000;
+
+}
+
+.siderbar {
+  width: 88%;
+  height: 3.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(6, 255, 125, .8);
+  margin-bottom: 23px;
+
+}
+
+.siderbar .siderbar-list {
+  display: flex;
+  list-style: none;
+
+}
+
+.siderbar .siderbar-list li {
+  display: flex;
+  list-style: none;
+  margin: 13px;
+
+}
+
+.siderbar .siderbar-list li a {
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.siderbar .siderbar-list li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 0 auto;
+  transition: .4s;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.siderbar .siderbar-list li a:hover::after {
+  width: 100%;
+}
+
+
+#Discord {
+  min-height: 100vh;
+  background-color: rgb(18, 18, 18);
+
+}
+
+.discord-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  color: rgb(255, 255, 255);
+  padding: 50px;
+  transition: .4s;
+}
+
+.discord-container h2 {
+  margin-bottom: 32px;
+
+}
+
+.discord-container .DiscordServeurImg {
+  width: 20%;
+  border-radius: 50rem;
+  margin-bottom: 48px;
+
+}
+
+.discord-container .card {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 180px;
-  height: 280px;
-  margin: 18px;
+  flex-flow: wrap row;
+  width: auto;
+  height: auto;
+  margin: 17px;
+  padding: 30px;
   border-radius: 8px;
-  background-color: #202251;
+  background-color: rgb(68, 68, 68);
+
 }
 
-.container-projet .box .row .github {
-  background-color: aliceblue;
+.discord-container .card .title {
+  margin-top: 30px;
 }
 
-.container-projet .box .row .card .title_box {
-  padding-top: 10px;
-  display: block;
-  text-align: center;
-}
-
-.container-projet .box .row .card .imgs {
+.discord-container .card .p {
+  position: relative;
   display: flex;
   width: 100%;
-  justify-content: center;
-}
-
-.container-projet .box .row .card .imgs img {
-  width: 80px;
-  height: 80px;
-  border-radius: 12rem;
-  display: flex;
-  justify-content: center;
-}
-
-.container-projet .box .row .card .btn_box {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  bottom: 40px;
-}
-
-.container-projet .box .row .card .btn_box .btn {
-  display: block;
-  padding: 5px;
-  border-radius: 5rem;
-  width: 8rem;
+  margin-left: auto;
   text-align: center;
-  background-color: #1249d3;
-  color: #fff;
-  transition: 0.5s;
-}
-
-.container-projet .box .row .card .btn_box .btn:hover {
-  transform: scale(1.1);
-}
-
-.btn-scroll {
-  display: flex;
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
   justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  position: fixed;
-  background-color: #1249d3;
-  bottom: 0px;
-  right: 50px;
-  opacity: 0;
-  pointer-events: auto;
-  border-radius: 50px;
-  transition: all 0.3s ease;
+
 }
 
-.btn-scroll i {
-  font-size: 26px;
-  color: #fff;
+.theme-discord {
+  background-color: rgb(68, 68, 68);
+
 }
 
-.btn-scroll.active {
-  bottom: 50px;
-  opacity: 1;
-  pointer-events: none;
-}
+@media screen and (max-width: 1160px) {
 
-@media screen and (max-width: 580px) {
-  .content {
-    width: 300px;
-    height: 300px;
-    padding: 20px;
+  .navbar .navbar-list {
+    display: none;
+
   }
-
-  .portfolio-boxing .porfolio-descp .portfolio-img img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .portfolio-boxing .porfolio-descp .portfolio-description {
+  .navbar .logo {
     position: absolute;
-    left: 60%;
+    left: 30px;
   }
-}
-.humbgerMenu {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  top: 0px;
-  left: -100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.8s;
-}
+  .github-container-stats .siderbar {
+    width: 110%;
+    align-items: center;
 
-@media screen and (max-width: 1050px) {
-  .liner-box {
-    display: none;
   }
-
-  nav .nav-list {
-    display: none;
-  }
-
-  .container-projet {
-    height: 300vh;
-  }
-
   .humbger {
     position: absolute;
     display: block;
     width: 35px;
     height: 35px;
-    overflow: hidden;
-    right: 20px;
-    appearance: none;
-    outline: none;
-    border: none;
-    z-index: 2000;
-    cursor: pointer;
-  }
+    right: 30px;
+    z-index: 999;
+    align-items: center;
 
-  .humbger .bar,
-.humbger::before,
-.humbger::after {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+
+  }
+  .humbger .dir, .humbger::before, .humbger::after {
     content: "";
     display: block;
     width: 100%;
     height: 5px;
-    margin: 6px 0;
-    border-radius: 8rem;
-    align-items: center;
-    background-color: white;
-    transition: 0.6s;
+    margin: 6px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: .4s;
   }
-
   .humbger.active::before {
     transform: rotate(-45deg) translate(-8px, 6px);
-  }
-
-  .humbger.active::after {
+  } .humbger.active::after {
     transform: rotate(45deg) translate(-9px, -8px);
-  }
 
-  .humbger.active .bar {
+  }
+  .humbger.active .dir {
+    transform: translateX(100px);
     opacity: 0;
   }
-
-  .humbgerMenu.active {
-    position: absolute;
+  .humngermenu {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
     width: 100%;
     height: 100vh;
-    top: 0px;
-    left: 0;
-    z-index: 100;
-    opacity: 1;
-    background-color: #1249d3;
-    transition: 0.8s;
-  }
-
-  .humbgerMenu.active ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .humbgerMenu.active ul li {
-    list-style: none;
-    display: flex;
-    font-size: 44px;
-    margin-bottom: 27px;
-  }
-
-  .humbgerMenu.active ul li a {
-    display: block;
-    color: #fff;
+    top: 0;
+    left: -100%;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background-color:  rgb(68, 68, 68);
+    font-size: 20px;
+    transition: .4s;
   }
+  .humngermenu ul {
+    display: flex;
+    list-style: none;
+    flex-flow: column;
+    
+  } 
+  .humngermenu ul li {
+    display: flex;
+    margin-bottom: 34px;
 
-  .liner-box {
-    width: 400px;
-    left: 50%;
   }
-
-  .portfolio-boxing .porfolio-descp .portfolio-description {
-    left: 64%;
+  .humngermenu ul li a {
+    font-size: 600;
+    color: rgb(255, 255, 255);
   }
-
-  .container-projet {
-    height: 220vh;
+  .humngermenu.active {
+    position: absolute;
+    left: 0%;
   }
 }
+
+@media screen and (max-width: 560px) {
+
+  
+
+  .github-container-stats .siderbar {
+    width: 120%;
+    align-items: center;
+
+  }
+
+  .github-container-stats .siderbar .siderbar-list li {
+    margin: 8px;
+  }
+
+  .github-container-stats .siderbar .siderbar-list li a {
+    font-size: 12px;
+  }
+
+  .github-container-stats .statsImg {
+    width: 120%;
+  }
+
+  .github-container-stats .porjetWeb1 {
+    width: 120%;
+  }
+
+  .github-container-stats .organisationImg {
+    width: 120%;
+
+  }
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #pagesweb {
   display: none;
 }
@@ -397,24 +471,39 @@ nav .nav-list li a:hover::after {
   transform: translate(-50%, -50%);
 }
 
+.row-load {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
 .loading {
-  border: solid 2px #fff;
-  border-top: solid 2px transparent;
-  border-bottom: solid 2px transparent;
-  border-right: solid 2px transparent;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: loading1 1s infinite linear;
-  transition: 0.8s ease;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 34px;
+  height: 34px;
+  margin: 8px;
+  border-radius: 8rem;
+  background-color: rgb(0, 97, 255);
+  animation: loading1 1s infinite linear both;
 }
 
 @keyframes loading1 {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(0px);
   }
+
+  50% {
+    transform: scale(1.8);
+  }
+
   100% {
-    transform: rotate(360deg);
+    transform: translateX(0px);
   }
 }
 

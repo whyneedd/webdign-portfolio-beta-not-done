@@ -1,8 +1,7 @@
 const humbger = document.querySelector(".humbger");
-const menu = document.querySelector(".humbgerMenu");
+const menu = document.querySelector(".humngermenu");
 const load = document.querySelector(".back");
 const pages = document.querySelector(".pagesweb");
-const btn_scroll = document.querySelector(".btn-scroll")
 
 // Menu Humbger
 humbger.addEventListener("click", function() {
@@ -12,26 +11,11 @@ humbger.addEventListener("click", function() {
 
 })
 
-window.onscroll = function() {
-    var scrollY = window.scrollY;
-
-    if (scrollY >= 100) {
-        btn_scroll.classList.add("active")
-    } else {
-        btn_scroll.classList.remove("active")   
-    }
-}
-
-btn_scroll.onclick = function() {
-    document.documentElement.scrollTop="0";
-
-}
-
 var loadShow;
 
 // Event loading 
 function LoadTimes() {
-    loadShow = setTimeout(ShowPagesWeb, 5);
+    loadShow = setTimeout(ShowPagesWeb, 1);
 
 }
 
@@ -40,3 +24,4 @@ function ShowPagesWeb() {
     document.querySelector(".pagesweb").style.display = "block"
 
 }
+

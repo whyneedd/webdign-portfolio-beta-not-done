@@ -10,159 +10,165 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>AyakoDevs | Accueil</title>
+    <title>SkyzzDevs | Accueil</title>
 </head>
 
 <body onload="LoadTimes()">
+
+
     <!-- Page de chargement -->
     <div class="back">
         <div class="contenair_ldg">
-            <div class="loading">
+            <div class="row-load">
+                <div class="loading"></div>
             </div>
         </div>
     </div>
 
     <section class="pagesweb" id="pagesweb">
-        <section class="header">
-            <nav class="nav-bar" id="nav-bar">
-                <a href="#" class="logo"> Ayako</a>
-                <ul class="nav-list">
+        <section class="main">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <a href="#" class="logo"> SkyzZ</a>
+                <ul class="navbar-list">
                     <li>
                         <a href="#"> Accueil</a>
                     </li>
                     <li>
-                        <a href="#Projets"> Pojets</a>
+                        <a href="#Github"> Github</a>
                     </li>
                     <li>
-                        <a href="https://discord.gg/wgeaecX3UK"> Contact</a>
+                        <a href="#"> Projet</a>
+                    </li>
+                    <li>
+                        <a href="#Discord"> Discord</a>
                     </li>
                 </ul>
-
                 <div class="humbger">
-                    <span class="bar"></span>
+                    <span class="dir"></span>
                 </div>
-
-
-                <div class="humbgerMenu">
-                    <ul>
+                <div class="humngermenu">
+                    <ul  class="humbger-list">
                         <li>
                             <a href="#"> Accueil</a>
                         </li>
                         <li>
-                            <a href="#Projets"> Pojets</a>
+                            <a href="#Github"> Github</a>
                         </li>
                         <li>
-                            <a href="https://discord.gg/wgeaecX3UK"> Contact</a>
+                            <a href="#"> Projet</a>
+                        </li>
+                        <li>
+                            <a href="#Discord"> Discord</a>
                         </li>
                     </ul>
                 </div>
-
             </nav>
 
-            <div class="portfolio-boxing">
-                <div class="portfolio-boxtwo">
-                    <div class="porfolio-descp">
-                        <div class="content">
-                            <div class="portfolio-img">
-                                <img src="Skyzz.jpg" alt="Ayako">
-                            </div>
-                            <div class="portfolio-description">
-                                <h2>Ayako</h2>
-                                <p>16 ans</p>
-                                <p>Designer web</p>
-                                <p>Web à pile complète et bot discord. <br> étudiant en programmation autodidacte pendant mes heures creuses</p>
-                            </div>
-                            <div class="liner-box"></div>
+            <div class="content">
+                <div class="container-content">
+                    <small>Bienvenue sur </small>
+                    <h1>SkyzZ !</h1>
+                    <a href="#Github" class="btn">Visiter</a>
+                </div>
+            </div>
+        </section>
+        <section class="main" id="Github">
 
-                            <div class="container-projet" id="Projets">
-                                <div class="title">
-                                    <h2>Mes Projet</h2>
-                                </div>
-                                <div class="box">
-                                    <div class="row">
 
-                                        <!-- Box Slywinter -->
-                                        <div class="card">
-                                            <div class="title_box">
-                                                <div class="imgs">
-                                                    <img src="https://cdn.discordapp.com/avatars/890617447953076224/a1115a26e61fc932d71189ee0346529f.png?size=512"
-                                                        alt="">
-                                                </div>
-                                                <h2>Slywinter</h2>
-                                            </div>
-                                            <div class="btn_box">
-                                                <a href="#" class="btn"> Voir</a>
-                                            </div>
-                                        </div>
+            <div class="github-container-stats">
+                <!-- SiderBar Github -->
+                <div class="siderbar">
+                    <ul class="siderbar-list">
+                        <li>
+                            <a href="#organisation"> Organisation</a>
+                        </li>
+                        <li>
+                            <a href="#PojetWeb"> ProjetWeb</a>
+                        </li>
+                        <li>
+                            <a href="#Statistiques"> Stats</a>
+                        </li>
+                        <li>
+                            <a href="#CodeOpenSources"> Code</a>
+                        </li>
+                        <li>
+                            <a href="#CodeOpenSources"> Info</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Texte -->
+                <h2 id="Statistiques">Mes stats</h2>
+                <!-- Image -->
+                <img class="statsImg" src="/assets/img/1.png" alt="Mes Statistiques">
 
-                                        <!-- Box Slywive -->
-                                        <div class="card">
-                                            <div class="title_box">
-                                                <div class="imgs">
-                                                    <img src="https://cdn.discordapp.com/avatars/872415864501194752/1491767b7985d0ff8530b4b398ed7412.png?size=512"
-                                                        alt="">
-                                                </div>
-                                                <h2>Slywive</h2>
-                                            </div>
-                                            <div class="btn_box">
-                                                <a href="#" class="btn"> Voir</a>
-                                            </div>
-                                        </div>
+                <h2 id="organisation">Mes organisations</h2>
+                <img class="organisationImg" src="/assets/img/2.png" alt="">
 
-                                        <!-- Box SafeCleaner -->
-                                        <div class="card">
-                                            <div class="title_box">
-                                                <div class="imgs">
-                                                    <img src="https://cdn.discordapp.com/avatars/873934226255388673/de2023aa6389bc4eb47634160b932636.png"
-                                                        alt="">
-                                                </div>
-                                                <h2>SafeCleaner</h2>
-                                            </div>
-                                            <div class="btn_box">
-                                                <a href="#" class="btn"> Voir</a>
-                                            </div>
-                                        </div>
+                <h2 id="PojetWeb">Projet Web</h2>
+                <img class="porjetWeb1" src="/assets/img/3.png" alt="">
 
-                                        <!-- Box -->
-                                        <div class="card">
-                                            <div class="title_box">
-                                                <div class="imgs">
-                                                    <img src="https://cdn.discordapp.com/avatars/873934226255388673/de2023aa6389bc4eb47634160b932636.png"
-                                                        alt="">
-                                                </div>
-                                                <h2>SafeCleaner</h2>
-                                            </div>
-                                            <div class="btn_box">
-                                                <a href="#" class="btn"> Voir</a>
-                                            </div>
-                                        </div>
+                <h2 id="CodeOpenSources">Code Gratuit</h2>
+                <p>Il y a eu une erreur lors du chargement...</p>
 
-                                        <!-- Box Github -->
-                                        <div class="card github">
-                                            <div class="title_box">
-                                                <div class="imgs">
-                                                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
-                                                </div>
-                                                <h2>Github</h2>
-                                            </div>
-                                            <div class="btn_box">
-                                                <a href="#" class="btn btn-cookie"> Rejoindre</a>
-                                            </div>
-                                        </div>
+                <h2 id="PojetWeb">Ma Description</h2>
+                <img class="porjetWeb1" src="/assets/img/4.png" alt="">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+
+        </section>
+
+        <section class="main" id="Discord">
+            <div class="discord-container">
+                <div class="siderbar theme-discord">
+                    <ul class="siderbar-list">
+                        <li>
+                            <a href="#ServeurDiscord"> Serveur</a>
+                        </li>
+                        <li>
+                            <a href="#RobotDiscord"> Robot</a>
+                        </li>
+                    </ul>
+                </div>
+                <h2 id="ServeurDiscord">Notre Discord</h2>
+                <img class="DiscordServeurImg"
+                    src="https://cdn.discordapp.com/attachments/889105751379951638/966873848970625054/RDD.gif" alt="">
+
+
+                <div class="card" id="RobotDiscord">
+                    <div class="title">
+                        <h2>SafeCleaner</h2>
+                    </div>
+                    <div class="p">
+                        <p>The best integration for discord <br>
+                            You are looking to configure your server easily, <br> quickly and in style you are in the
+                            right place!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="title">
+                        <h2>Slywive</h2>
+                    </div>
+                    <div class="p">
+                        <p>Salut, je me présente, Je m'appelle Slywive. <br> Je suis basé sur le thème Demon Slayer.
+                            <br> J'ai été conçu pour vous aider dans les tâches quotidiennes sur vos serveurs discords.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="title">
+                        <h2>Slywinter</h2>
+                    </div>
+                    <div class="p">
+                        <p>Salut, je me présente, Je m'appelle Slywinter. <br> Je suis basé sur le thème d'one pièces.
+                            <br> J'ai été conçu pour vous aider dans les tâches quotidiennes sur vos serveurs discords.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="container-scroll">
-                <a class="btn-scroll"><i class="fa-solid fa-angles-up"></i></a>
-            </div>
+
         </section>
     </section>
-
 
     <!-- Fichier Javascrpit -->
     <script src="assets/js/main.js"></script>
